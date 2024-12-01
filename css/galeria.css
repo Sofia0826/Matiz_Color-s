@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(254, 226, 231);
+  color: #333;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+header .logo h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff0077;
+}
+
+header .logo span {
+  color: #ff71b3;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute; 
+  top: 20px; 
+  left: 0; 
+  width: 100%; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+  section {
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+ .item {
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  } 
+  .item img {
+    width: 50%;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 35px rgba(82, 43, 121, 0.5); 
+  }
+  
+  
+  .item p {
+    font-size: 1rem;
+    color: #000000;
+    
+  }
+
+  
+  footer {
+    background-color: rgb(164, 91, 170); 
+    color: white; 
+    padding: 20px 0;  
+    margin-top: 4px;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap; 
+}
+
+.uno {
+    flex: 1; 
+    margin: 10px; 
+}
+
+.uno h2 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+    color: white;
+}
+
+.uno p {
+    font-size: 14px;
+    margin: 5px 0; 
+}
+
