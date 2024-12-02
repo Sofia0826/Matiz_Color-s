@@ -47,19 +47,43 @@ nav ul li a {
     color: #333;
 }
 
+nav ul li a:hover {
+  color: #ff0077; 
+}
+
 .iconos {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    position: absolute; 
-    top: 20px; 
-    left: 0; 
-    width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  width: 100%; 
+  padding: 10px;
+  margin: 0px 0px 0px -20px;
+}
+
+.iconos_1,
+.iconos_2 {
+  display: flex;
+  gap: 10px;
+}
+
+.iconos img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.iconos img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: rgb(164, 91, 170); 
+  color: white; 
+  padding: 20px 0;  
+  margin-top: 25px;
 }
 
 .main-container {
@@ -151,11 +175,6 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) { 
-    nav ul {
-      flex-direction: column; 
-      gap: 10px;
-    }
-  
     .main-container {
       width: 90%; 
       padding: 20px;
@@ -189,29 +208,13 @@ footer {
       height: 300px; 
     }
   
-    footer {
-      text-align: center; 
-    }
-  
-    .principal {
-      flex-direction: column; 
-      align-items: center; 
-      text-align: center;
-    }
-  
     .uno {
       width: 100%; 
       margin: 10px 0; 
     }
   }
   
-  @media (max-width: 480px) {
-
-    nav ul {
-      flex-direction: column; 
-      gap: 5px;
-    }
-  
+  @media (max-width: 480px) {  
     .main-container {
       width: 95%; 
       padding: 15px;
@@ -232,17 +235,6 @@ footer {
   
     iframe {
       height: 250px;
-    }
-  
-    footer {
-      padding: 15px 10px;
-      font-size: 0.9rem; 
-    }
-  
-    .principal {
-      flex-direction: column; 
-      align-items: center; 
-      text-align: center;
     }
   
     .uno {

@@ -46,21 +46,39 @@ nav ul li a {
     font-size: 14px;
     font-weight: bold;
     color: #333;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #ff0077; 
 }
 
 .iconos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    width: 100%; 
+    padding: 10px;
+    margin: 0px 0px 0px -20px;
+}
+
+.iconos_1,
+.iconos_2 {
+    display: flex;
     gap: 10px;
-    font-size: 20px;
+}
+
+.iconos img {
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    position: absolute; 
-    top: 20px; 
-    left: 0; 
-    width: 100%; 
-    padding: 10px; 
-    box-sizing: border-box; 
+}
+
+.iconos img:hover {
+    transform: scale(1.1);
 }
 
 footer {
@@ -192,4 +210,43 @@ footer {
 .fotos img:hover {
     transform: scale(1.05); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 200px;
+    }
+
+    .fotos {
+        gap: 10px;
+    }
+
+    .fotos img {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .carousel-button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .uno h2 {
+        font-size: 18px;
+    }
+
+    .uno p {
+        font-size: 12px;
+    }
 }
