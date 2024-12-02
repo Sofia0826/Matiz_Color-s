@@ -148,3 +148,107 @@ footer {
     font-size: 14px;
     margin: 5px 0; 
 }
+
+/* Responsivo */
+@media (max-width: 768px) { 
+    /* Cambios para pantallas más pequeñas (tabletas y teléfonos en orientación horizontal) */
+    nav ul {
+      flex-direction: column; /* Navegación en columna */
+      gap: 10px;
+    }
+  
+    .main-container {
+      width: 90%; /* Ancho del contenedor principal más grande en pantallas pequeñas */
+      padding: 20px;
+    }
+  
+    .box {
+      width: 100%; /* Cada caja ocupa el 100% del contenedor */
+      padding: 15px;
+    }
+  
+    .mission-box h2, .vision-box h2 {
+      font-size: 22px; /* Font-size de los títulos más pequeño */
+    }
+  
+    .mission-box p, .vision-box p {
+      font-size: 14px; /* Font-size del texto más pequeño */
+    }
+  
+    .prueba2 {
+      flex-direction: column; /* Elementos apilados en columna */
+      width: 100%; /* Asegura que ocupe el 100% del ancho */
+      margin-top: 20px; 
+    }
+  
+    .abajo {
+      width: 100%; /* La sección abajo ocupará todo el ancho */
+      height: auto; /* El alto será automático para adaptarse */
+    }
+  
+    iframe {
+      height: 300px; /* Ajustar la altura del iframe */
+    }
+  
+    footer {
+      text-align: center; /* Centrar el texto en el footer */
+    }
+  
+    .principal {
+      flex-direction: column; /* Los elementos dentro de principal se apilan en una columna */
+      align-items: center; /* Centrar los elementos */
+      text-align: center;
+    }
+  
+    .uno {
+      width: 100%; /* Asegura que cada sección ocupe el 100% del ancho */
+      margin: 10px 0; /* Espaciado entre elementos */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Cambios para pantallas aún más pequeñas (teléfonos móviles en orientación vertical) */
+    nav ul {
+      flex-direction: column; /* Navegación en columna */
+      gap: 5px;
+    }
+  
+    .main-container {
+      width: 95%; /* Más estrecho en pantallas más pequeñas */
+      padding: 15px;
+    }
+  
+    .box {
+      width: 100%; /* Asegura que cada caja ocupe todo el ancho */
+      padding: 10px;
+    }
+  
+    .mission-box h2, .vision-box h2 {
+      font-size: 18px; /* Font-size más pequeño */
+    }
+  
+    .mission-box p, .vision-box p {
+      font-size: 12px; /* Font-size más pequeño */
+    }
+  
+    iframe {
+      height: 250px; /* Ajuste de altura más pequeño para el iframe */
+    }
+  
+    footer {
+      padding: 15px 10px;
+      font-size: 0.9rem; /* Font-size más pequeño */
+    }
+  
+    .principal {
+      flex-direction: column; /* Los elementos dentro de principal se apilan en una columna */
+      align-items: center; /* Centrar los elementos */
+      text-align: center;
+    }
+  
+    .uno {
+      width: 100%; /* Cada sección ocupa todo el ancho */
+      margin: 10px 0; /* Espaciado entre los elementos */
+    }
+  }
+  
