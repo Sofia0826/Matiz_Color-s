@@ -87,6 +87,7 @@ footer {
   padding: 20px 0;  
   margin-top: 25px;
 }
+
 .principal {
   display: flex;
   justify-content: space-between; 
@@ -98,7 +99,7 @@ footer {
 }
 
 .uno {
-  flex: 1 1 300px; 
+  flex: 1; 
   margin: 10px; 
 }
 
