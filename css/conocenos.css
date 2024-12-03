@@ -169,6 +169,33 @@ iframe {
   height: 100%; 
 }
 
+
+.principal {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap; 
+}
+
+.uno {
+  flex: 1 1 300px; 
+  margin: 10px; 
+}
+
+.uno h2 {
+  font-size: 20px; 
+  margin-bottom: 10px; 
+  color: white;
+}
+
+.uno p {
+  font-size: 14px;
+  margin: 5px 0; 
+}
+
 .form-container {
 background-color: #ffffff;
 padding: 20px 30px;
